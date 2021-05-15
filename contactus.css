@@ -105,10 +105,12 @@ margin-top: 50px;
     margin-top: 30px;
     font-size: 13px;
   }
+  .para-2{
+    font-size: 13px;
+  }
   .article-1{
     margin-left: 5px;
-    padding: 0px;
-    font-size: 10px;
+    font-size: 15px;
   }
    .map-map{
     width: 50%;
