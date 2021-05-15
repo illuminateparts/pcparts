@@ -343,7 +343,7 @@ hr {
 }
 @media only screen and (max-width:500px) {
     .search-bar input{
-        width: 100px;
+        width: 50px;
     }
     .navbar-down{
         padding: 1px;
