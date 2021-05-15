@@ -1,0 +1,353 @@
+/*body/footer configuration*/
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #1c2f2f;
+    transition: margin-left 0.5s;
+}
+footer{
+    margin: 0;
+    padding: 1px;
+    font-family: Times, Times New Roman, serif;
+    background-color: #2d3436;
+}
+/*the pink navbar configuration*/
+.navbar-down {
+    background-color: #9d005d;
+    margin: 0;
+    padding: 0;
+}
+/*pink navbar elements*/
+.navbar-box {
+    display: inline-block;
+    padding: 0px 19px;
+}
+/*text for the pink navbar*/
+.navbar-text {
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+/*when you hover over pink navbar text tge color change*/
+.navbar-text:hover{
+    color: white;
+}
+/*dropdown button*/
+.dropbtn{
+    background-color: #9d005d;
+    border: none;
+    color: black;
+    transition: 0.3s;
+}
+/*drop down div*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+/* the div that conatin the anchors inside of the drop down menu*/
+.dropdown-content{
+    display: none;
+    position:absolute;
+    background-color: #c71585;
+    min-width: 176px;
+}
+/*the anchors inside the drop down menu*/
+.dropdown-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: 0.3s;
+}
+/*when you hover over the dropdown div the menu drops*/
+.dropdown:hover .dropdown-content {
+    display: block;
+    z-index: 1;
+}
+/*the black navbar*/
+.navbar-top{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #d75ba9;
+    padding: 7px;
+    color: white;
+}
+/*changes the color of the text when you hover over the anchor*/
+.dropdown-content a:hover{
+    color: white;
+}
+/*makes a shade over the page your at*/
+.Active{
+    background-image: linear-gradient(to right,rgba(157, 0, 93),rgba(215, 91, 169));
+    padding: 7px 50px;
+}
+/*logo at the top navbar*/
+.logo-image{
+    position: relative;
+    display: inline-block;
+}
+/*searchbar at the top navbar*/
+.search-bar{
+    position: absolute;
+    display: inline-block;
+}
+/*the search bar box*/
+.search-bar input{
+    margin-left: 30px;
+    margin-top: 16px;
+    border: none;
+    border-radius: 14px;
+    padding: 7px;
+    padding-right: 300px;
+}
+#ul-search {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    z-index: 99;
+}
+
+#ul-search li a {
+    border: 1px solid #ddd; 
+    margin-top: -1px; 
+    background-color: #f6f6f6; 
+    padding: 5px; 
+    text-decoration: none;
+    font-size: 18px;
+    color: black; 
+    display: block;
+    z-index: 99;
+}
+/*when you press the search box the color changes*/
+.search-bar input:focus {
+    outline: none;
+    background-color: #e3e0e2;
+}
+.search-bar:hover #ul-search{
+    position: relative;
+    display: block;
+}
+
+/*the search button*/
+.search-bar button{
+    margin-left: -27px;
+    border: none;
+    border-radius: 14px;
+    border-left: none;
+    padding: 7px;
+    background-color: white;
+}
+/*articals for the footer*/
+.browsers{
+    text-decoration: none;
+    color:#b5b5b5;
+}
+/*style for the scroll up button*/
+#myBtn{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    border: none;
+    background-color: #c71585;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+/*animation for the scroll up button*/
+#myBtn:hover {
+    background-color: #d75ba9; 
+}
+/*the div that contain the face and insta images*/
+.footer-connect{
+    float: right;
+    padding: 5px 6px;
+}
+/*facebook and insta images*/
+.footer-connect img{
+    padding: 5px;
+}
+/*the line that separates the footer and copyright*/
+hr {
+    padding: 2px;
+    background-color: white;
+}
+/*to change the image slider size*/
+.carousel-inner > .carousel-item > img {
+    width:1080px;
+    height:520px;
+    padding: 15px;
+}
+/*text over image*/
+.div2-txt{
+    color: #f2f2f2;
+    font-size: 30px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 150px;
+    width: 100%;
+    text-align: center;
+}
+.img-txt1{
+    position: relative;
+    animation: text 2s 1;
+}
+.img-txt2{
+    animation: text2 2s 1;
+}
+@keyframes text{
+    0%{
+        color: black;
+    }
+    30%{
+        letter-spacing: 18px;
+    }
+    85%{
+        letter-spacing: -8px;
+    }
+}
+@keyframes text2{
+    0%{
+        color: black;
+    }
+    30%{
+        margin-bottom: 20px;
+        letter-spacing: 10px;
+    }
+    85%{
+        margin-bottom: 20px;
+        letter-spacing: -10px;
+    }
+}
+/*news about our website*/
+.news .web-news{
+    margin-top: 40px;
+    position: relative;
+    margin-bottom: 250px;
+}
+.news .web-news .web-img{
+    text-align: start;
+    position: absolute;
+}
+.news .web-news .web-txt h1{
+    position: relative;
+    text-align: right;
+    color: black;
+}
+.news .web-news .web-txt p{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    float: right;
+    color: white;
+}
+/*hr between image slider and about the page*/
+.hr-sec{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+
+/*shopping bag button configuration*/
+.shopping-bag{
+    position: relative;
+    float: right;
+    margin-top: -55px;
+    margin-right: 40px;
+    background-color: black;
+    border: none;
+}
+
+/*side bar pops when shopping bag pressed*/
+.shopping-cart{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    left: 0;
+    overflow-x: hidden;
+    background-color: #dfe6e9;
+    transition: 0.5s;
+}
+/* The navigation menu links */
+.shopping-cart a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    z-index: 1;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+/* Position and style the close button (top right corner) */
+.shopping-cart .closebtn {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+/*the background for news section*/
+.news{
+    margin: 50px;
+    color: white;
+}
+.news .new-sec{
+    padding: 50px;
+    opacity: 0.9;
+    background-image: url("./images/new.jpg");
+}
+@media only screen and (max-width:1000px) {
+    .news .web-news .web-img{
+    text-align: start;
+    position: relative;
+    }
+}
+@media only screen and (max-width:800px) {
+    .search-bar input{
+            padding-right: 150px;
+    }
+}
+@media only screen and (max-width:750px) {
+    .search-bar input{
+        padding-right: 50px;
+    }
+    .navbar-down{
+        padding: 1px;
+        overflow-x: scroll;
+        white-space: nowrap;
+    }
+}
+@media only screen and (max-width:600px) {
+    .search-bar input{
+        width: 170px;
+    }
+    .navbar-down{
+        padding: 1px;
+        overflow-x: scroll;
+        white-space: nowrap;
+    }
+    .shopping-bag{
+        margin-right: 25px;
+    }
+}
+@media only screen and (max-width:500px) {
+    .search-bar input{
+        width: 100px;
+    }
+    .navbar-down{
+        padding: 1px;
+        overflow-x: scroll;
+        white-space: nowrap;
+    }
+}

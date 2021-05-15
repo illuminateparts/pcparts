@@ -1,0 +1,131 @@
+*{box-sizing: border-box;}
+
+.cont{
+    position: relative;
+    background-image: url("./images/contact.jpg");
+    background-repeat: no-repeat cover;
+    padding: 20px 0 30px 0;
+}
+/* Style inputs */
+.con-form{
+  width: 40%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 20px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 2px; /* Add a top margin */
+  margin-bottom: 10px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+.con-form:focus{
+  outline: none;
+}
+.line-art{
+color: black;
+margin-top: 50px;
+}
+.paragraph-1{
+  background-color: white;
+  color: black;
+  position: relative;
+  margin-top: -135px;
+  opacity: 0.8;
+  margin-left: 450px;
+}
+.article-1{
+  display: inline-block;
+  background-color: white;
+  opacity: 0.8;
+  padding: 10px;
+  position: relative;
+  margin-left: 400px;
+}
+.map-text{
+  margin-left: 200px;
+}
+.map-map{
+  margin-left: 200px
+}
+@media only screen and (max-width:1000px) {
+  .paragraph-1{
+    margin-left: 400px;
+    font-size: 14px;
+  }
+  .article-1{
+    margin-left: 400px;
+    font-size: 14px;
+  }
+  .map-map{
+    width: 90%;
+    height: 90%;
+    margin-left: 190px;
+  }
+}
+
+@media only screen and (max-width:800px) {
+  .paragraph-1{
+    font-size: 14px;
+  }
+  .article-1{
+    margin-left: 280px;
+    font-size: 14px;
+  }
+  .map-map{
+    width: 70%;
+    height: 70%;
+    margin-left: 170px;
+  }
+}
+@media only screen and (max-width:750px) {
+  .article-1{
+    margin-left: 200px;
+    font-size: 14px;
+  }
+  .map-map{
+    width: 60%;
+    height: 60%;
+  }
+
+}
+  @media only screen and (max-width:600px) {
+    .article-1{
+    margin-left: 150px;
+    font-size: 14px;
+  }
+    .map-map{
+    width: 50%;
+    height: 50%;
+    margin-left: 100px;
+  }
+}
+@media only screen and (max-width:500px) {
+  .para-1{
+    margin-left: -100px;
+    margin-right: 50px;
+    margin-top: 30px;
+    font-size: 13px;
+    font-size: 8px;
+  }
+  .para-2{
+    font-size: 13px;
+    padding: 0;
+  }
+  .article-1{
+    margin-left: 5px;
+    padding: 0px;
+    font-size: 10px;
+  }
+   .map-map{
+    width: 50%;
+    height: 60%;
+    margin-left: 90px;
+  }
+  .map-text{
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  .map-text{
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+}

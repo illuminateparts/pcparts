@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ABOUT US</title>
+    <!css for the bootstrap>
+    <!the icon for the title>
+    <link rel="icon" href="logo.png" type="image/icon" />
+    <!main css script>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="aboutus.css">
+    <!css for the bootstrap>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+      crossorigin="anonymous"
+    />
+    <!javascript for the scrollbutton>
+    <script type="text/javascript" src="./js/scrollbtn.js"></script>
+    <!javascript for the shopping bag>
+    <script type="text/javascript" src="./js/shoping.js"></script>
+    <script type="text/javascript" src="./js/search.js"></script>
+  </head>
+  <body>
+    <!the navbar for the website>
+    <header>
+      <nav>
+        <!the top navbar>
+        <div class="navbar-top">
+          <!logo image for the navbar>
+          <div class="logo-image">
+            <a href="index.html"
+              ><img src="./images/logoname.png" width="200" height="70" alt=""
+            /></a>
+          </div>
+          <!search bar on the top navbar>
+          <div class="search-bar">
+            <input
+              type="search"
+              id="mysearch"
+              onkeyup="search()"
+              placeholder="Search..."
+              name="search"
+            />
+            <!search elements for the search input>
+            <ul id="ul-search">
+              <li><a class="sear-a" href="shop.html">Razor</a></li>
+              <li><a class="sear-a" href="shop.html">Logitech</a></li>
+              <li><a class="sear-a" href="shop.html">Bloody</a></li>
+              <li><a class="sear-a" href="shop.html">Mouse</a></li>
+              <li><a class="sear-a" href="shop.html">Laptop</a></li>
+              <li><a class="sear-a" href="shop.html">Mousepad</a></li>
+              <li><a class="sear-a" href="shop.html">KeyBoard</a></li>
+            </ul>
+          </div>
+          <!the shopping bag icon to open the side bar>
+          <div id="bagbtn" class="div-bag">
+            <button class="shopping-bag" onclick="toggleNav()">
+              <img src="./images/bag.png" alt="" width="25" />
+            </button>
+          </div>
+          <!shoping car side bar and icon>
+          <div id="sidebar-cart" class="shopping-cart">
+            <a
+              id="clsbtn"
+              href="javascripte:void(0)"
+              class="closebtn"
+              onclick="closeNav()"
+              >&times;</a
+            >
+            <a id="side-txt" href=""
+              ><img src="./images/shopping-cart.png" alt="" width="100"
+            /></a>
+            <a id="side-txt" href="">Cart Is Empty</a>
+          </div>
+        </div>
+        <!the lower navbar>
+        <div>
+          <ul class="navbar-down">
+            <!dropdown menu>
+            <div class="dropdown">
+              <button class="dropbtn">More Catergorires</button>
+              <div class="dropdown-content">
+                <a href="shop.html">Laptop</a>
+                <a href="shop.html">Accessories</a>
+              </div>
+            </div>
+            <!links for navigation>
+            <li class="navbar-box">
+              <a href="index.html" class="navbar-text">Home</a>
+            </li>
+            <li class="navbar-box Active">
+              <a href="aboutus.html" class="navbar-text">About Us</a>
+            </li>
+            <li class="navbar-box">
+              <a href="shop.html" class="navbar-text">Shop</a>
+            </li>
+            <li class="navbar-box">
+              <a href="contactus.html" class="navbar-text">Contact Us</a>
+            </li>
+            <li class="navbar-box">
+              <a href="login.html" class="navbar-text">Login/Register</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="all-about">
+      <h3 class="text-center aboutus-intro aboutus123"><b>About ILLUMINATE Parts Lebanon</b></h3>
+      <div class="aboutus-intro">
+        <article class="text-center mission">
+          <h3 class="text-center aboutus-intro"><b>Our mission</b></h3>
+          <p>
+            <h4>To provide Lebanon with the highest quality computer systems and parts
+            and service at the lowest available prices.</h4><br> We know which parts work
+            together efficiently. Also, the computer systems we build are custom
+            made to meet your specific technology needs.<br> At ILLUMINATE Parts, we
+            determine the exact needs of our customers by figuring out how the
+            customer plans to use the computer; then we provide the many available
+            pricing options.<br> We have been serving Lebanon online since 2021, and
+            we are always planning to excel in the future.
+          </p>
+        </article>
+        <hr class="space-hr">
+        <h3 class="text-center aboutus-intro"><b>Our Products</b></h3>
+        <article class="mission text-center">
+          <p>
+            <h4>Most components of our systems are independent of one another.</h4><br>
+            How can a video card be upgraded if it is built into the mainboard? It can’t. 
+            If the modem in your system ceases to function, how can you replace it when it is a part
+            >of the soundcard? You’ll have to pay the cost of replacing both! Most of the components of Computer Parts 
+            systems are independent of one another, which allow
+            you to replace or upgrade at a lower cost. 
+            Note that we do incorporate motherboards with built-in components in our offers due to market competitive reasons.
+            Before you buy one of our systems, we’ll explain the maximum technology available for each of our systems.
+          </p>
+        </article>
+        <hr class="space-hr">
+        <h3 class="text-center aboutus-intro"><b>Our Systems</b></h3>
+        <article class="mission text-center">
+          <p>
+            <h4>Brand Name Components Are All We Sell!</h4><br>
+            After browsing our web pages, you will notice that we do not “stock” thousands of parts like many other companies. 
+            Why? We test and support every part we sell, and by selling the top names, quality parts, 
+            it is very unlikely that you’ll have to return a part for replacement. 
+            We also have fewer support problems; therefore, we <br>have happier customers.</br>
+            Most of our products are cheaper than the ones on the Lebanese market because we directly deliver from the manufacturer to the customer.
+          </p>
+        </article>
+        <hr class="space-hr">
+        <h3 class="text-center aboutus-intro"><b>Our Vision</b></h3>
+        <article class="mission text-center">
+          <p>
+            <h4>To be an active part of people progress in the IT and tech world</h4><br>
+            As online shopping becomes more popular in Lebanon we intend to grow into every household, not only to be used as a reference but to actually be an active part of peoples progress in the IT and tech world. Most of our customers are tech-savvy people and understand the structure of our website, our aim for the short future is to provide the normal end user with a better online shopping experience with easy to follow instructions and secure payment methods.
+          </p>
+        </article>
+      </div>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  </body>
+  <!end of the body>
+  <!start of the footer content>
+  <footer>
+    <!facebook and instagram images>
+    <div>
+      <div class="footer-connect">
+        <a href=""><img src="./images/facebook.png" width="40" height="35" /></a>
+        <a href="https://www.instagram.com/illuminateparts/"><img src="./images/instagram.png" width="40" height="35" /></a>
+      </div>
+      <!footer paragraphs for location and contact info>
+      <section>
+        <article class="browsers">
+          <img src="./images/location.png" width="35" height="25" />
+          Lebanon,beirut.
+        </article>
+      </section>
+      <section>
+        <article class="browsers">
+          <img src="./images/phone.png" width="35" height="25" />
+          phone:+96171235996 - +9613824082.
+        </article>
+      </section>
+      <section>
+        <article id="myemail">
+          <img src="./images/email.png" width="35" height="25" />
+          <a href="#">Email:illuminateparts@gmail.com</a>
+        </article>
+        <hr/>
+      </section>
+      <!copyright claim>
+      <p class="browsers">&copy; 2021 Illuminate-Parts. All rights reserved</p>
+    </div>
+  </footer>
+</html>

@@ -1,0 +1,125 @@
+.shop-bod{
+    background-color: #3a3b3c;
+}
+.contenter{
+    background-color: #d48faa;
+    box-shadow: 2px 2px 2px 2px #c36a90;
+    color: white;
+    padding-top: 10px;
+}
+.col{
+    display: none;
+}
+.show {
+    display: block;
+}
+.filter-list{
+    text-align: center;
+}
+
+.filter-list .botn{
+    margin: 0;
+    position: relative;
+    color: white;
+    border: none;
+    background-color: #d48faa;
+    font-size: 20px;
+    transition: 0.7s;
+}
+.filter-list .botn:hover{
+    text-decoration: underline;
+    text-decoration-color: black;
+    text-decoration-thickness: 2px;
+}
+.active{
+    text-decoration: underline;
+    text-decoration-color: black;
+    text-decoration-thickness: 2px;
+}
+.album{
+    margin: 20px;
+}
+.btn-group .btn{
+    padding: 3px;
+    border: solid gray 1px;
+    color: black;
+    outline: none;
+    box-shadow: none;
+}
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+.btn:hover {
+    background-color: #d75ba9;
+}
+.card-body{
+    display: none;
+}
+.card{
+    transition: 0.5s;
+    padding: 5px;
+    box-shadow: 2px 2px 2px 2px #c0c4c4;
+}
+.card-1:hover{
+    position: absolute;
+    padding: 10px;
+    z-index: 1;
+    width: 26.5%;
+}
+.card:hover .card-body{
+    display: block;
+}
+.card:hover .down-hr{
+    display: block;
+}
+.up-hr{
+    background-color: black;
+    padding: 0.7px;
+    margin-top: 1px;
+}
+.down-hr{
+    background-color: black;
+    padding: 1px;
+    margin-bottom: 0;
+    margin-top: 0.5px;
+    display: none;
+}
+@media only screen and (max-width:1050px) {
+    .card-1:hover{
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    }
+}
+@media only screen and (max-width:1000px) {
+    .card-1:hover{
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    }
+}
+@media only screen and (max-width:900px) {
+    .card-1:hover{
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    }
+}
+@media only screen and (max-width:700px) {
+    .card-1:hover{
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    }
+    .filter-list ul{
+        overflow-x: scroll;
+    }
+}
+@media only screen and (max-width:500px) {
+    .card-1:hover{
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    }
+}

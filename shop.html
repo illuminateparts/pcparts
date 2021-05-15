@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ILLUMINATE PARTS</title>
+    <!the icon for the title>
+    <link rel="icon" href="logo.png" type="image/icon" />
+    <!main css script>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="shop.css" />
+    <title>SHOP</title>
+    <!css for the bootstrap>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+      crossorigin="anonymous"
+    />
+    <!javascript for the scrollbutton>
+    <script type="text/javascript" src="./js/scrollbtn.js"></script>
+    <!javascript for the shopping bag>
+    <script type="text/javascript" src="./js/shoping.js"></script>
+    <script type="text/javascript" src="./js/search.js"></script>
+  </head>
+  <body class="shop-bod">
+    <!the navbar for the website>
+    <!the navbar for the website>
+    <header>
+      <nav>
+        <!the top navbar>
+        <div class="navbar-top">
+          <!logo image for the navbar>
+          <div class="logo-image">
+            <a href="index.html"
+              ><img src="./images/logoname.png" width="200" height="70" alt=""
+            /></a>
+          </div>
+          <!search bar on the top navbar>
+          <div class="search-bar">
+            <input
+              type="search"
+              id="mysearch"
+              onkeyup="search()"
+              placeholder="Search..."
+              name="search"
+            />
+            <!search elements for the search input>
+            <ul id="ul-search">
+              <li><a class="sear-a" href="shop.html">Razor</a></li>
+              <li><a class="sear-a" href="shop.html">Logitech</a></li>
+              <li><a class="sear-a" href="shop.html">Bloody</a></li>
+              <li><a class="sear-a" href="shop.html">Mouse</a></li>
+              <li><a class="sear-a" href="shop.html">Laptop</a></li>
+              <li><a class="sear-a" href="shop.html">Mousepad</a></li>
+              <li><a class="sear-a" href="shop.html">KeyBoard</a></li>
+            </ul>
+          </div>
+          <!the shopping bag icon to open the side bar>
+          <div id="bagbtn" class="div-bag">
+            <button class="shopping-bag" onclick="toggleNav()">
+              <img src="./images/bag.png" alt="" width="25" />
+            </button>
+          </div>
+          <!shoping car side bar and icon>
+          <div id="sidebar-cart" class="shopping-cart">
+            <a
+              id="clsbtn"
+              href="javascripte:void(0)"
+              class="closebtn"
+              onclick="closeNav()"
+              >&times;</a
+            >
+            <a id="side-txt" href=""
+              ><img src="./images/shopping-cart.png" alt="" width="100"
+            /></a>
+            <a id="side-txt" href="">Cart Is Empty</a>
+          </div>
+        </div>
+        <!the lower navbar>
+        <div>
+          <ul class="navbar-down">
+            <!dropdown menu>
+            <div class="dropdown">
+              <button class="dropbtn">More Catergorires</button>
+              <div class="dropdown-content">
+                <a href="shop.html">Laptop</a>
+                <a href="shop.html">Accessories</a>
+              </div>
+            </div>
+            <!links for navigation>
+            <li class="navbar-box">
+              <a href="index.html" class="navbar-text">Home</a>
+            </li>
+            <li class="navbar-box">
+              <a href="aboutus.html" class="navbar-text">About Us</a>
+            </li>
+            <li class="navbar-box Active">
+              <a href="shop.html" class="navbar-text">Shop</a>
+            </li>
+            <li class="navbar-box">
+              <a href="contactus.html" class="navbar-text">Contact Us</a>
+            </li>
+            <li class="navbar-box">
+              <a href="login.html" class="navbar-text">Login/Register</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!Start of the body content>
+    <!image slider from bootstrap>
+    <section class="container-fluid contenter">
+      <div class="row">
+        <div class="filter-list " id="contain-btn">
+          <h1>Shop</h1>
+            <button class="botn active" onclick="fselect('all')">All</button>
+            <button class="botn" onclick="fselect('mouse')">Mouse</button>
+            <button class="botn" onclick="fselect('keyboard')">Keyboard</button>
+            <button class="botn" onclick="fselect('pad')">Mousepad</button>
+            <button class="botn" onclick="fselect('laptop')">Laptop</button>
+        </div>
+      </div>
+    </section>
+    <div class="album">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col mouse">
+            <div class="card card-1">
+              <img src="./images/razor.jpg" width="100%" height="225" />
+              <hr class="up-hr" />
+              <h6>Razer Mouse</h6>
+              <hr class="down-hr" />
+              <div class="card-body">
+                <p class="card-text">
+                  Sensor:Optical <br />Cable:Razer&trade; Speedflex Cable.<br />
+                  Tilt Scroll Wheel:no. <br />Sizes:Length x Grip Width x Height
+                  5" x 2.43" x 1.68" 127.0 mm x 61.7 mm x 42.7 mm .<br />
+                  Weight: 0.18 lbs/ 82 g.<br />Price:100&#36;
+                </p>
+                <div>
+                  <div class="btn-group">
+                    <button type="button" class="btn">Add To Cart</button>
+                    <button type="button" class="btn">Favorite</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col mouse">
+            <div class="card card-1">
+              <img src="./images/loditeck.jpg" width="100%" height="225" />
+              <hr class="up-hr" />
+              <h6>Logitech mouse</h6>
+              <hr class="down-hr" />
+              <div class="card-body">
+                <p class="card-text">
+                  Wired usb connectivity .<br />
+                  200 to 16,000 dpi HERO Sensor.<br />
+                  11 Programmable Buttons.<br />
+                  Adjustable Weight System. <br />Metal X'Glide Armor Boot.
+                  <br />
+                  16-Grade Calibration Tech.<br />Price:250&#36;
+                </p>
+                <div>
+                  <div class="btn-group">
+                    <button type="button" class="btn">Add To Cart</button>
+                    <button type="button" class="btn">Favorite</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col mouse">
+            <div class="card card-1">
+              <img src="./images/bloddy.jpg" width="100%" height="225" />
+              <hr class="up-hr" />
+              <h6>Blody mouse</h6>
+              <hr class="down-hr" />
+              <div class="card-body">
+                <p class="card-text">
+                  Click Response Less 0.2 ms.<br />Infrared-Wheel.<br />3
+                  Shooting Modes in Left Button. <br />
+                  4000 dpi. <br />6 Sniper Modes. <br />No Double-Click.
+                  <br />Price:60&#36;
+                </p>
+                <div>
+                  <div class="btn-group">
+                    <button type="button" class="btn">Add To Cart</button>
+                    <button type="button" class="btn">Favorite</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col pad">
+            <div class="card card-1 ">
+              <img src="images/mousepad.jpg" width="100%" height="225" />
+              <hr class="up-hr" />
+              <h6>Razer mouse pad</h6>
+              <hr class="down-hr" />
+              <div class="card-body">
+                <p class="card-text">
+                  Sizes:Large. <br />Thickness:0.20" / 5 mm. <br />
+                  Surface:Soft. <br />
+                  Mat Type:Soft. <br />Price:66&#36;
+                </p>
+                <div>
+                  <div class="btn-group">
+                    <button type="button" class="btn">Add To Cart</button>
+                    <button type="button" class="btn">Favorite</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col pad">
+            <div class="card card-1">
+              <img src="./images/mousepad1.jpg" width="100%" height="225"/>
+              <hr class="up-hr" />
+              <h6 id="myUL" x="50%" y="50%" fill="#eceeef" dy=".3em"></h6>
+                Logitech mouse pad
+              </h6>
+              <hr class="down-hr" />
+              <div class="card-body">
+                <p class="card-text">
+                  Sizes:4xLarge. <br />
+                  Thickness:0.10'/ 3 mm. <br />
+                  Surface:soft. <br />Mat type:fiber.<br />Price:50&#36;
+                </p>
+                <div>
+                  <div class="btn-group">
+                    <button type="button" class="btn">Add To Cart</button>
+                    <button type="button" class="btn">Favorite</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col pad">
+            <div class="card card-1">
+              <img src="./images/mousepad2.jpg" width="100%" height="225"/>
+              <hr class="up-hr" />
+              <h6>Bloody mouse pad</h6>
+              <hr class="down-hr" />
+              <div class="card-body">
+                <p class="card-text">
+                  Sizes:5xLarge. <br />Thickness:0.25" / 3 mm. <br />
+                  Surface:soft. <br />Mat type:Rubber.<br />Price:44&#36;
+                </p>
+                <div>
+                  <div class="btn-group">
+                    <button type="button" class="btn">Add To Cart</button>
+                    <button type="button" class="btn">Favorite</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col keyboard">
+            <div class="card card-1">
+              <img src="./images/key1.jpg" width="100%" height="225"/>
+              <hr class="up-hr" />
+              <h6>Razer Keyboard</h6>
+              <hr class="down-hr" />
+              <div class="card-body">
+                <p class="card-text">
+                  Razer™ Mechanical Switches. <br />Transparent Switch Housing.
+                  <br />
+                  Doubleshot ABS Keycaps. <br />Aluminum Construction.<br />Price:250&#36;
+                </p>
+                <div>
+                  <div class="btn-group">
+                    <button type="button" class="btn">Add To Cart</button>
+                    <button type="button" class="btn">Favorite</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col keyboard">
+            <div class="card card-1">
+              <img src="./images/key2.jpg" width="100%" height="225"/>
+              <hr class="up-hr" />
+              <h6>HyperX Keyboard</>
+              <hr class="down-hr" />
+              <div class="card-body">
+                <p class="card-text">
+                  Signature Light Bar, Stylish RGB Effects. <br />5 Zones
+                  Multi-Color Customization Option. <br />
+                  Responsive Keys With Anti-Ghosting Functionality.<br />Price:350&#36;
+                </p>
+                <div>
+                  <div class="btn-group">
+                    <button type="button" class="btn">Add To Cart</button>
+                    <button type="button" class="btn">Favorite</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col keyboard">
+            <div class="card card-1">
+              <img src="images/key3.jpg" width="100%" height="225"/>
+              <hr class="up-hr" />
+              <h6>Bloody Keyboard</h6>
+              <hr class="down-hr" />
+              <div class="card-body">
+                <p class="card-text">
+                  Auto-Shot Key Setting. <br />5 Turbo-Shot Key Setting. <br />
+                  Double Secured Water-Resistant. <br />
+                  Anti-Slippery Keyboard Lift.<br />Price:1050&#36;
+                </p>
+                <div>
+                  <div class="btn-group">
+                    <button type="button" class="btn">Add To Cart</button>
+                    <button type="button" class="btn">Favorite</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col laptop">
+            <div class="card">
+              <img src="images/laptop1.jpg" width="100%" height="225"/>
+              <hr class="up-hr" />
+              <h6>Asus Laptop</h6>
+              <hr class="down-hr" />
+              <div class="card-body">
+                <p class="card-text">
+                  <b>Disblay:</b> <br />
+                  -Size:15.00-inch. <br />-Resolution:1920x1080px <br />
+                  <b>Processor:</b> <br />
+                  -Processor:Intel core i7 4th Gen 4720HQ. <br />
+                  -Base Clock Speed:2.6 GHz. <br />
+                  <b>Memory:</b> <br />
+                  -RAM:8GB. <br />
+                  -Expandable RAM up to(GB):16GB. <br />
+                  <b>Storage:</b> <br />
+                  -Hard disk:1TB. <br />
+                  -SSD:no.<br />
+                  -Price:1000&#36;
+                </p>
+                <div>
+                  <div class="btn-group">
+                    <button type="button" class="btn">Add To Cart</button>
+                    <button type="button" class="btn">Favorite</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col laptop">
+            <div class="card">
+              <img src="./images/laptop2.jpg" width="100%" height="225"/>
+              <hr class="up-hr" />
+              <h6>Lenovo Laptop</>
+              <hr class="down-hr" />
+              <div class="card-body">
+                <p class="card-text">
+                  <b>Disblay:</b> <br />
+                  -Size:17.00-inch. <br />-Resolution:1920x1080px <br />
+                  <b>Processor:</b> <br />
+                  -Processor:Intel core i9 8th Gen 4750HQ. <br />
+                  -Base Clock Speed:4.0 GHz. <br />
+                  <b>Memory:</b> <br />
+                  -RAM:32GB. <br />
+                  -Expandable RAM up to(GB):64GB. <br />
+                  <b>Storage:</b> <br />
+                  -Hard disk:2TB. <br />
+                  -SSD:1TB.<br />
+                  -Price:2000&#36;
+                </p>
+                <div>
+                  <div class="btn-group">
+                    <button type="button" class="btn">Add To Cart</button>
+                    <button type="button" class="btn">Favorite</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col laptop">
+            <div class="card">
+              <img src="images/laptop3.jpg" width="100%" height="225"/>
+              <hr class="up-hr" />
+              <h6>HP OMEN Laptop</h6>
+              <hr class="down-hr" />
+              <div class="card-body">
+                <p class="card-text">
+                  <b>Display:</b> <br />
+                  -Size:16.00-inch. <br />-Resolution:1920x1080px <br />
+                  <b>Processor:</b> <br />
+                  -Processor:Intel core i5 10th Gen 4750HQ. <br />
+                  -Base Clock Speed:4.0 GHz. <br />
+                  <b>Memory:</b> <br />
+                  -RAM:8GB. <br />
+                  -Expandable RAM up to(GB):16GB. <br />
+                  <b>Storage:</b> <br />
+                  -Hard disk:no. <br />
+                  -SSD:265GB.<br />
+                  -Price:1500&#36;
+                </p>
+                <div>
+                  <div class="btn-group">
+                    <button type="button" class="btn">Add To Cart</button>
+                    <button type="button" class="btn ">Favorite</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!scrollbutton to scroll back up>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script>
+      // Execute the function and show all columns
+      fselect("all")
+      function fselect(c) {
+        var x, i;
+        x = document.getElementsByClassName("col");
+        if (c == "all") c = "";
+        for (i = 0; i < x.length; i++) {
+          removec(x[i], "show");
+          if (x[i].className.indexOf(c) > -1) addc(x[i], "show");
+        }
+      }
+      // Show filtered elements
+      function addc(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          if (arr1.indexOf(arr2[i]) == -1) {
+            element.className += " " + arr2[i];
+          }
+        }
+      }
+      // Hide elements that are not selected
+      function removec(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          while (arr1.indexOf(arr2[i]) > -1) {
+            arr1.splice(arr1.indexOf(arr2[i]), 1);
+          }
+        }
+        element.className = arr1.join(" ");
+      }
+        // Add active class to the current button (highlight it)
+        var btnContainer = document.getElementById("contain-btn");
+        var btns = btnContainer.getElementsByClassName("botn");
+        for (var i = 0; i < btns.length; i++) {
+          btns[i].addEventListener("click", function(){
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+          });
+        }
+    </script>
+  </body>
+  <!end of the body>
+  <!start of the footer content>
+  <footer>
+    <!facebook and instagram images>
+    <div>
+      <div class="footer-connect">
+        <a href=""
+          ><img src="./images/facebook.png" width="40" height="35"
+        /></a>
+        <a href="https://www.instagram.com/illuminateparts/"
+          ><img src="./images/instagram.png" width="40" height="35"
+        /></a>
+      </div>
+      <!footer paragraphs for location and contact info>
+      <section>
+        <article class="browsers">
+          <img src="./images/location.png" width="35" height="25" />
+          Lebanon,beirut.
+        </article>
+      </section>
+      <section>
+        <article class="browsers">
+          <img src="./images/phone.png" width="35" height="25" />
+          phone:+96171235996 - +9613824082.
+        </article>
+      </section>
+      <section>
+        <article id="myemail">
+          <img src="./images/email.png" width="35" height="25" />
+          <a href="#">Email:illuminateparts@gmail.com</a>
+        </article>
+        <hr />
+      </section>
+      <!copyright claim>
+      <p class="browsers">&copy; 2021 Illuminate-Parts. All rights reserved</p>
+    </div>
+  </footer>
+</html>

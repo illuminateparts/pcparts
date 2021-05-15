@@ -1,0 +1,13 @@
+.all-about{
+    background-image: url("./images/about.jpg");
+    background-repeat: no-repeat cover;
+    color: black;
+    margin: 0;
+    margin-bottom: -16px;
+    padding: 0;
+}
+.all-about article{
+    background-color: white;
+    color: black;
+    opacity: 0.65;
+}

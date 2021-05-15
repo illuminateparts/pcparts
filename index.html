@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ILLUMINATE PARTS</title>
+    <!css for the bootstrap>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+      crossorigin="anonymous"
+    />
+    <!the icon for the title>
+    <link rel="icon" href="logo.png" type="image/icon" />
+    <!main css script>
+    <link rel="stylesheet" href="index.css" />
+    <!bootstrap javascript>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+      crossorigin="anonymous"
+    ></script>
+    <!javascript for the scrollbutton>
+    <script type="text/javascript" src="./js/scrollbtn.js"></script>
+    <!javascript for the shopping bag>
+    <script type="text/javascript" src="./js/shoping.js"></script>
+    <script type="text/javascript" src="./js/search.js"></script>
+  </head>
+  <body>
+    <!the navbar for the website>
+    <header>
+      <nav>
+        <!the top navbar>
+        <div class="navbar-top">
+          <!logo image for the navbar>
+          <div class="logo-image">
+            <a href="index.html"
+              ><img src="./images/logoname.png" width="200" height="70" alt=""
+            /></a>
+          </div>
+          <!search bar on the top navbar>
+          <div class="search-bar">
+            <input
+              type="search"
+              id="mysearch"
+              onkeyup="search()"
+              placeholder="Search..."
+              name="search"
+            />
+            <!search elements for the search input>
+            <ul id="ul-search">
+              <li><a class="sear-a" href="shop.html">Razor</a></li>
+              <li><a class="sear-a" href="shop.html">Logitech</a></li>
+              <li><a class="sear-a" href="shop.html">Bloody</a></li>
+              <li><a class="sear-a" href="shop.html">Mouse</a></li>
+              <li><a class="sear-a" href="shop.html">Laptop</a></li>
+              <li><a class="sear-a" href="shop.html">Mousepad</a></li>
+              <li><a class="sear-a" href="shop.html">KeyBoard</a></li>
+            </ul>
+          </div>
+          <!the shopping bag icon to open the side bar>
+          <div id="bagbtn" class="div-bag">
+            <button class="shopping-bag" onclick="toggleNav()">
+              <img src="./images/bag.png" alt="" width="25" />
+            </button>
+          </div>
+          <!shoping car side bar and icon>
+          <div id="sidebar-cart" class="shopping-cart">
+            <a
+              id="clsbtn"
+              href="javascripte:void(0)"
+              class="closebtn"
+              onclick="closeNav()"
+              >&times;</a
+            >
+            <a id="side-txt" href=""
+              ><img src="./images/shopping-cart.png" alt="" width="100"
+            /></a>
+            <a id="side-txt" href="">Cart Is Empty</a>
+          </div>
+        </div>
+        <!the lower navbar>
+        <div>
+          <ul class="navbar-down">
+            <!dropdown menu>
+            <div class="dropdown">
+              <button class="dropbtn">More Catergorires</button>
+              <div class="dropdown-content">
+                <a href="shop.html">Laptop</a>
+                <a href="shop.html">Accessories</a>
+              </div>
+            </div>
+            <!links for navigation>
+            <li class="navbar-box Active">
+              <a href="index.html" class="navbar-text">Home</a>
+            </li>
+            <li class="navbar-box">
+              <a href="aboutus.html" class="navbar-text">About Us</a>
+            </li>
+            <li class="navbar-box">
+              <a href="shop.html" class="navbar-text">Shop</a>
+            </li>
+            <li class="navbar-box">
+              <a href="contactus.html" class="navbar-text">Contact Us</a>
+            </li>
+            <li class="navbar-box">
+              <a href="login.html" class="navbar-text">Login/Register</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <!Start of the body content>
+    <!image slider from bootstrap>
+    <div
+      id="carouselExampleSlidesOnly"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./image slider/key.jpg" class="d-block w-100" />
+          <div class="div2-txt">
+            <h3 class="img-txt1">Best Products</h3>
+            <p class="img-txt2">From all kinds of brands</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./image slider/mon.jpg" class="d-block w-100" />
+          <div class="div2-txt">
+            <h3 class="img-txt1">We offer variety of products</h3>
+            <p class="img-txt2">Illuminate Parts</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./image slider/cas.jpg" class="d-block w-100" />
+          <div class="div2-txt">
+            <h3 class="img-txt1">Latest products</h3>
+            <p class="img-txt2">Razor, Bloody, Logitech</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!text between image slider and stuf about us>
+    <div class="hr-sec">
+      <span>About Us</span>
+    </div>
+    <!news about tech and stuf>
+    <div class="news">
+      <article class="new-sec">
+        <h1>Illuminate Parts:<br /></h1>
+        <p>
+          Latest Tech range At Laptop Outlet Including Laptops, Notebooks,
+          Tablets, Desktop PCs, Gaming Gadgets From Leading Brands And Software
+          Maintenance Anywhere Tailored To Meet Your Needs.
+        </p>
+      </article>
+      <!news about our website>
+      <div class="web-news">
+        <div class="web-img">
+          <img src="./images/webnews.jpg" alt="" width="400" />
+        </div>
+        <div class="web-txt">
+          <h1>News About Latest Tech In The Market:<br /></h1>
+          <p>
+            Intel Alder Lake (12th-gen) release date, pricing and spec news.<br />Samsung
+            Exynos ARM CPU release date, devices and spec news.<br />Intel Tiger
+            Lake (11th-gen) release date, specs and devices.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!scrollbutton to scroll back up>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  </body>
+  <!end of the body>
+  <!start of the footer content>
+  <footer>
+    <!facebook and instagram images>
+    <div>
+      <div class="footer-connect">
+        <a href=""
+          ><img src="./images/facebook.png" width="40" height="35"
+        /></a>
+        <a href="https://www.instagram.com/illuminateparts/"
+          ><img src="./images/instagram.png" width="40" height="35"
+        /></a>
+      </div>
+      <!footer paragraphs for location and contact info>
+      <section>
+        <article class="browsers">
+          <img src="./images/location.png" width="35" height="25" />
+          Lebanon,beirut.
+        </article>
+      </section>
+      <section>
+        <article class="browsers">
+          <img src="./images/phone.png" width="35" height="25" />
+          phone:+96171235996 - +9613824082.
+        </article>
+      </section>
+      <section>
+        <article id="browsers">
+          <img src="./images/email.png" width="35" height="25" />
+          <a href="#">Email:illuminateparts@gmail.com</a>
+        </article>
+        <hr />
+      </section>
+      <!copyright claim>
+      <p class="browsers">&copy; 2021 Illuminate-Parts. All rights reserved</p>
+    </div>
+  </footer>
+</html>
