@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ILLUMINATE PARTS</title>
     <!the icon for the title>
     <link rel="icon" href="logo.png" type="image/icon" />
     <!main css script>
@@ -419,18 +418,18 @@
     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     <script>
       // Execute the function and show all columns
-      fselect("all")
+      fselect("all")//call funcion with paraneter all
       function fselect(c) {
         var x, i;
-        x = document.getElementsByClassName("col");
-        if (c == "all") c = "";
-        for (i = 0; i < x.length; i++) {
+        x = document.getElementsByClassName("col");//get class name col
+        if (c == "all") c = "";//if class all display block
+        for (i = 0; i < x.length; i++) {//loop to to check the div and make them appear
           removec(x[i], "show");
           if (x[i].className.indexOf(c) > -1) addc(x[i], "show");
         }
       }
       // Show filtered elements
-      function addc(element, name) {
+      function addc(element, name) {//add class
         var i, arr1, arr2;
         arr1 = element.className.split(" ");
         arr2 = name.split(" ");
@@ -441,7 +440,7 @@
         }
       }
       // Hide elements that are not selected
-      function removec(element, name) {
+      function removec(element, name) {//remove class
         var i, arr1, arr2;
         arr1 = element.className.split(" ");
         arr2 = name.split(" ");
@@ -453,7 +452,7 @@
         element.className = arr1.join(" ");
       }
         // Add active class to the current button (highlight it)
-        var btnContainer = document.getElementById("contain-btn");
+        var btnContainer = document.getElementById("contain-btn");//to check if the button is pressed and add active class
         var btns = btnContainer.getElementsByClassName("botn");
         for (var i = 0; i < btns.length; i++) {
           btns[i].addEventListener("click", function(){
