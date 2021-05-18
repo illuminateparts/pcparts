@@ -15,7 +15,6 @@ function openNav() {//toggles the shopping cart to open
 }
 
 function closeNav() {//toggles the shopping cart and the x button to close
-  document.body.style.backgroundColor= "white";
   document.getElementById("sidebar-cart").style.width = "0";
   document.getElementById("sidebar-cart").style.paddingTop = "0px";
   document.getElementById("clsbtn").style.display = "none";
