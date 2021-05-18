@@ -1,22 +1,27 @@
+/*body*/
 .shop-bod{
     background-color: #3a3b3c;
 }
+/*the section of the filter*/
 .contenter{
     background-color: #d48faa;
     box-shadow: 2px 2px 2px 2px #c36a90;
     color: white;
     padding-top: 10px;
 }
+/*to hide all the content in the shop*/
 .col{
     display: none;
 }
+/*to show the boxes*/
 .show {
     display: block;
 }
+/*div for button*/
 .filter-list{
     text-align: center;
 }
-
+/*buttons for the filter*/
 .filter-list .botn{
     margin: 0;
     position: relative;
@@ -31,14 +36,17 @@
     text-decoration-color: black;
     text-decoration-thickness: 2px;
 }
+/*makes a line under the filtered button*/
 .active{
     text-decoration: underline;
     text-decoration-color: black;
     text-decoration-thickness: 2px;
 }
+/*the div that contain the products*/
 .album{
     margin: 20px;
 }
+/*buttons in the products*/
 .btn-group .btn{
     padding: 3px;
     border: solid gray 1px;
@@ -53,31 +61,37 @@
 .btn:hover {
     background-color: #d75ba9;
 }
+/*makes the specs of product not visible*/
 .card-body{
     display: none;
 }
+/*the card that contain the product and specs*/
 .card{
     transition: 0.5s;
     padding: 5px;
     box-shadow: 2px 2px 2px 2px #c0c4c4;
 }
+/*to hover over the other cards*/
 .card-1:hover{
     position: absolute;
     padding: 10px;
     z-index: 1;
     width: 26.5%;
 }
+/*to make the car-body appear*/
 .card:hover .card-body{
     display: block;
 }
 .card:hover .down-hr{
     display: block;
 }
+/*the upper line under the image*/
 .up-hr{
     background-color: black;
     padding: 0.7px;
     margin-top: 1px;
 }
+/* bottom line under the image*/
 .down-hr{
     background-color: black;
     padding: 1px;
