@@ -1,9 +1,9 @@
 function toggleNav() {//toggles the shopping cart to open and close the side menu
   var element = document.getElementById("sidebar-cart");
-  if(element.style.width > "1")
+  if(element.style.width > "1")//check if the sidebar is open
   {
     closeNav();
-  }else{
+  }else{//check is the sidebar is closed
     openNav();
   } 
 }
