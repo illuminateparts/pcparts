@@ -350,4 +350,7 @@ hr {
         overflow-x: scroll;
         white-space: nowrap;
     }
+    .web-img img{
+        width: 97%;
+    }
 }
